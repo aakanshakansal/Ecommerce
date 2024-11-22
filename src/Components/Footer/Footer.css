@@ -1,0 +1,203 @@
+/* .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #24262b;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-logo p {
+    color: white;
+    font-size: 46px;
+    font-weight: 700;
+    
+
+}
+.footer-links{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: white;
+    font-size: 20px;
+}
+.footer-links li{
+    cursor: pointer;
+}
+
+
+.footer-social-icons{
+    display: flex;
+    gap:20px;
+
+}
+.footer-icon-container{
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #eebebeeb;
+    
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+.footer-copyright hr{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 10px;
+    background: black;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+} */
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #24262b;
+    position: relative;  /* Added to position the footer content relative to the particles container */
+    padding: 20px;       /* Adjust padding as needed */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo p {
+    color: white;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-links li {
+    cursor: pointer;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icon-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #eebebeeb;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 10px;
+    background: black;
+}
+
+/* Particles container */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Ensures footer content is above the particles */
+.footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Responsive design for screens 500px and below */
+@media (max-width: 500px) {
+    .footer {
+        
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo p {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .footer-social-icons {
+        gap: 15px;
+    }
+
+    .footer-icon-container {
+        padding: 8px;
+        padding-bottom: 4px;
+    }
+
+    .footer-copyright {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .footer-copyright hr {
+        width: 90%;
+        height: 5px;
+    }
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+}
